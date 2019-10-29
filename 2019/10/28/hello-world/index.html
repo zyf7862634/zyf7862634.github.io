@@ -654,8 +654,11 @@
 
 
 
+
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
    <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: 'dd66a95a15859585bca3',
@@ -664,12 +667,17 @@
           owner: 'zyf7862634',
           admin: ['zyf7862634'],
           id: location.pathname,
-          distractionFreeMode: 'true'
+          labels: ['Gitalk'],
+          perPage: 15,
+          pagerDirection: 'last',
+          createIssueManually: true,
+          distractionFreeMode: false
         })
         gitalk.render('gitalk-container')
        </script>
 
 
+.gt-container a{border-bottom: none;}
 
   
 
